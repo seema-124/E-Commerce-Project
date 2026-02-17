@@ -11,7 +11,7 @@
     <nav>
         <a href="#">Home</a>
         <a href="#">Products</a>
-        <a href="#">Cart</a>
+        <a href="#" id="cart-btn">Cart 🛒 (<span id="cart-count">0</span>)>Cart</a>
         <a href="#">Contact</a>
     </nav>
 </header>
@@ -48,7 +48,13 @@
 
     </div>
 </section>
-
+<!-- Cart Sidebar -->
+<div class="cart-sidebar" id="cart-sidebar">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <h3>Total: $<span id="cart-total">0</span></h3>
+    <button class="btn" onclick="clearCart()">Clear Cart</button>
+</div>
 <footer>
     <p>© 2026 ShopEasy. All Rights Reserved.</p>
 </footer>
